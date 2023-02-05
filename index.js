@@ -36,4 +36,14 @@ function fibonacci(number) {
   }
   console.log(c);
 }
-fibonacci(100);
+fibonacci(5);
+function palidrome(word) {
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] !== word[word.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+word = "eye";
+console.log(palidrome(word));
