@@ -24,3 +24,16 @@ let students = [
 ];
 let newStudents = students.sort((a, b) => a.age - b.age);
 console.log(newStudents);
+function fibonacci(number) {
+  let a = 0;
+  let b = 1;
+  let c = [];
+  for (let i = 0; i < number; i++) {
+    let temp = a;
+    a = b;
+    b = temp + b;
+    c.push(temp);
+  }
+  console.log(c);
+}
+fibonacci(100);
